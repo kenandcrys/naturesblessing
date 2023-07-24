@@ -2,17 +2,12 @@ import React from 'react';
 import './App.css';
 import CircleImage from './components/CircleImage';
 
-const style= {textDecoration: "none", color: "purple", border: "2px solid grey", borderRadius: "10px", backgroundColor: "lightpink", boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)"}
+
 
 function App() {
   return (
     <div className="App">
-      <nav className='nav-bar'>
-          <a style={style} href="about.asp">About</a>&nbsp;
-          <a style={style} href="default.asp">Home</a>&nbsp;
-          <a style={style} href="pictures.asp">Packages</a>&nbsp;
-          <a style={style} href="contact.asp">Contact</a>
-      </nav>
+      
       <h4 style={{
         marginTop: "10px",
         marginBottom: "170px",

@@ -1,11 +1,10 @@
 .App {
-  text-decoration: none;
   padding-top: 30px;
   text-align: center;
   font-size: 85px;
   font-weight: bold;
   background: linear-gradient(to bottom,lightblue, lightpink );
-  background-size: cover;
+  background-size:contain;
   height: 100vh;
   font-family: 'Squarespace';
   color: rgb(187, 0, 255);
@@ -15,7 +14,13 @@
 
 .nav-bar {
   display: flex;
+  background-color: lightblue;
   font-weight: 400;
   font-size: 30px;
   justify-content: space-around ;
+}
+
+
+p {
+  color: purple;
 }
