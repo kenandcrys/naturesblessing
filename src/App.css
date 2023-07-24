@@ -2,12 +2,12 @@
   text-decoration: none;
   padding-top: 30px;
   text-align: center;
-  font-size: 75px;
+  font-size: 85px;
   font-weight: bold;
   background: linear-gradient(to bottom,lightblue, lightpink );
   background-size: cover;
   height: 100vh;
-  font-family:cursive;
+  font-family: 'Squarespace';
   color: rgb(187, 0, 255);
 }
 
@@ -17,10 +17,5 @@
   display: flex;
   font-weight: 400;
   font-size: 30px;
-  text-align: center;
   justify-content: space-around ;
-}
-
-.click-on-photo{
-  margin-top: 250px;
 }

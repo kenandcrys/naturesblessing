@@ -11,6 +11,8 @@ import image7 from "../images/image7.png"
 import image8 from "../images/image8.png"
 import image9 from "../images/image9.png"
 import image10 from "../images/image10.png"
+import image11 from "../images/image11.png"
+import image12 from "../images/image12.png"
 
 const images = [
   image1,
@@ -22,8 +24,12 @@ const images = [
   image7,
   image8,
   image9,
-  image10
+  image10,
+  image11,
+  image12
 ];
+
+
 
 const CircleImage = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
