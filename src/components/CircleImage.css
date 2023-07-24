@@ -1,0 +1,21 @@
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px; /* Adjust this value to set the size of the circular pattern */
+  height: 300px; /* Adjust this value to set the size of the circular pattern */
+  margin: 0 auto;
+}
+
+.thumbnail-image {
+  margin-top: -250px;
+  width: 50px; /* Adjust this value to set the size of the individual images */
+  height: 50px; /* Adjust this value to set the size of the individual images */
+  border-radius: 20%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
