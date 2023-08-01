@@ -2,10 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 300px; /* Adjust this value to set the size of the circular pattern */
-  height: 300px; /* Adjust this value to set the size of the circular pattern */
-  margin: 0 auto;
+  height: 400px; /* Adjust this value to set the size of the circular pattern */
+  margin-bottom: 100px;
   
 }
 

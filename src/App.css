@@ -1,26 +1,43 @@
+
+html, body {
+  height: 100%;
+}
+
 .App {
   padding-top: 30px;
   text-align: center;
-  font-size: 85px;
-  font-weight: bold;
-  background: linear-gradient(to bottom,lightblue, lightpink );
-  background-size:contain;
-  height: 100vh;
+  font-size: 86px;
+ 
+  background-image: url("./images/nature_gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Squarespace';
   color: rgb(187, 0, 255);
+  margin: 0;
+  padding: 0;
 }
 
+h4 {
+  color: #ffe83b;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 1) ;
+  -webkit-text-stroke: 2px rgb(84, 84, 84);
+  
+}
 
 
 .nav-bar {
   display: flex;
-  background-color: lightblue;
   font-weight: 400;
-  font-size: 30px;
-  justify-content: space-around ;
+  font-size: 25px;
+  justify-content: space-around;
+  
 }
 
-
 p {
-  color: purple;
+  color: rgb(3, 18, 0);
+  text-shadow: 2px 4px 6px rgb(255, 202, 202) ;
+}
+
+.footer{
+  font-size: medium;
 }

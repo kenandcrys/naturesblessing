@@ -13,17 +13,22 @@ import image9 from "../images/image9.png";
 import image10 from "../images/image10.png";
 import image11 from "../images/image11.png";
 import image12 from "../images/image12.png";
+import image14 from "../images/image14.png";
+import image15 from "../images/image15.png";
+
 
 const images = [
   image2,
   image1,
   image3,
+  image15,
   image4,
   image5,
   image6,
   image7,
   image8,
   image9,
+  image14,
   image10,
   image11,
   image12
@@ -82,7 +87,7 @@ const CircleImage = () => {
         <img
           key={index}
           id={`image-${index}`}
-          src={image} // Use .default to access the image URL from the imported module
+          src={image}
           alt={"Images of people"}
           className={`thumbnail-image`}
           style={{
@@ -95,6 +100,7 @@ const CircleImage = () => {
           onClick={() => handleClick(index)}
         />
       ))}
+      
     </div>
   );
 };
