@@ -24,6 +24,9 @@ h4 {
   
 }
 
+.about {
+  background-color: aquamarine;
+}
 
 .nav-bar {
   display: flex;
