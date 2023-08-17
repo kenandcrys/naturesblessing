@@ -1,13 +1,32 @@
+/* Reset default margins and padding for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
+/* Set 100% height for html and body */
 html, body {
   height: 100%;
 }
 
+/* Apply background color to the entire viewport for .about */
+.about {
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Maintain existing styling for .App */
 .App {
   padding-top: 30px;
   text-align: center;
   font-size: 86px;
- 
   background-image: url("./images/nature_gradient.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,13 +38,8 @@ html, body {
 
 h4 {
   color: #ffe83b;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 1) ;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 1);
   -webkit-text-stroke: 2px rgb(84, 84, 84);
-  
-}
-
-.about {
-  background-color: aquamarine;
 }
 
 .nav-bar {
@@ -33,14 +47,13 @@ h4 {
   font-weight: 400;
   font-size: 25px;
   justify-content: space-around;
-  
 }
 
 p {
   color: rgb(3, 18, 0);
-  text-shadow: 2px 4px 6px rgb(255, 202, 202) ;
+  text-shadow: 2px 4px 6px rgb(255, 202, 202);
 }
 
-.footer{
+.footer {
   font-size: medium;
 }
