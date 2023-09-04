@@ -4,14 +4,14 @@ import "../App.css";
 const Nav = () => {
   return (
     <nav className="nav-bar">
-      <div
-        className="links"
-      >
+      <div className="links">
         <Link to="/">HOME</Link>&nbsp;
         <Link to="packages">PACKAGES</Link>
         <Link to="about">ABOUT</Link>
         <Link to="contact">CONTACT</Link>{" "}
       </div>
+
+      <div className="title">Nature's Blessings Photography</div>
     </nav>
   );
 };

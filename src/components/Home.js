@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="home-body">
-        <div className="title">Nature's Blessings Photography</div>
+        {/* <div className="title">Nature's Blessings Photography</div> */}
         <ImageSlider img={HomeImages} />
 
         <p className="welcome" style={{ fontSize: "32px" }}>
