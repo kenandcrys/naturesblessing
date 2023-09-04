@@ -156,6 +156,17 @@ h4 {
   min-height: 100vh;
 }
 
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
 .right-arrow {
   position: absolute;
   top: 50%;
