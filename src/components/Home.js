@@ -1,13 +1,13 @@
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import CircleImage from "./CircleImage";
-import image5 from "../images/image5.png";
+import ImageSlider from "./ImageSlider";
+import { HomeImages } from "./HomeImagesData";
 
 export default function Home() {
   return (
     <>
       <div className="home-body">
         <div className="title">Nature's Blessings Photography</div>
-        <img className="home-image" src={image5} />
+        <ImageSlider img={HomeImages} />
+
         <p className="welcome" style={{ fontSize: "32px" }}>
           Welcome to our serene world where you can experience the Soft Side of
           Nature's Blessings. Step into a realm of tranquility and immerse

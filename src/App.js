@@ -11,8 +11,8 @@ function App() {
       <div className="App">
         <Nav />
         <Home />
+        {/* <Footer /> */}
       </div>
-      <Footer />
     </>
   );
 }
