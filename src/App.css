@@ -102,7 +102,7 @@ p {
 }
 
 .nav-bar a:hover {
-  color: #007bff; /* Change color to blue when hovered */
+  color: rgba(251, 0, 155, 0.81); /* Change color to blue when hovered */
 }
 
 /* General Styles */
@@ -192,24 +192,29 @@ h4 {
 }
 
 .home-body {
-  position: relative;
-  min-height: 500px;
+  position: 100vh;
   background-color: transparent;
-  /* overflow: hidden; */
 }
 
 /* Welcome Paragraph Styles */
 .welcome {
-  padding: 50px 10%; /* Adds padding to text while keeping it centered */
-  background-color: transparent;
+  display: flex;
+  font-size: 32px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px; /* Adds padding to text while keeping it centered */
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(36, 36, 36); /* Assuming image5.png is a dark image */
-  font-size: 32px;
   font-weight: bold;
   text-align: justify; /* Justifying the text makes it more evenly spread */
   line-height: 1.6;
-  min-height: 100vh;
+  max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
 }
 
 .title {
