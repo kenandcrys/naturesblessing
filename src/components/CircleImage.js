@@ -56,7 +56,7 @@ const CircleImage = () => {
     images.forEach((image, index) => {
       const angle =
         angleIncrement * index + 2 * Math.PI * (expandedIndex / images.length);
-      const radius = 250; // Adjust this value to set the radius of the circular pattern
+      const radius = 200; // Adjust this value to set the radius of the circular pattern
 
       // Calculate the position of the image in the circle
       const x = radius * Math.cos(angle);
@@ -68,14 +68,14 @@ const CircleImage = () => {
         const expandedX = 0; // Centered along x-axis
         const expandedY = 0; // Centered along y-axis
         imageElement.style.transform = `translate(${expandedX}px, ${expandedY}px) scale(2)`; // Adjust the scale value as needed
-        imageElement.style.width = "12.5rem";
-        imageElement.style.height = "12.5rem";
+        imageElement.style.width = "10rem";
+        imageElement.style.height = "10rem";
         imageElement.style.borderRadius = "100%"; // 100% will make it fully round
       } else {
         // Position the images in a circular pattern
         imageElement.style.transform = `translate(${x}px, ${y}px)`;
-        imageElement.style.width = "6.35rem"; // Adjust this value based on your original image size
-        imageElement.style.height = "6.35rem"; // Adjust this value based on your original image size
+        imageElement.style.width = "6rem"; // Adjust this value based on your original image size
+        imageElement.style.height = "6rem"; // Adjust this value based on your original image size
         imageElement.style.borderRadius = "50%";
       }
     });
