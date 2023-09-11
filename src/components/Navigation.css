@@ -1,0 +1,63 @@
+.primary-header {
+  --_bg: hsla(0, 0%, 7%, 0);
+  --_logo-color: hsl(150, 100%, 67%);
+  --_nav-link-color: hsl(150, 100%, 67%);
+  background-color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
+  padding: 1rem;
+
+  position: relative;
+  top: 0;
+
+  z-index: 10;
+  transition: 500ms ease-in;
+  width: 100%;
+}
+
+.primary-header-bg {
+  /* background-image: url("../images/nature_gradient.png"); */
+  background-color: rgb(202, 226, 246);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.primary-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-header .link {
+  color: var(--_nav-link-color);
+  text-decoration: none;
+}
+
+.primary-header .link:hover,
+.primary-header .link:focus {
+  opacity: 0.5;
+}
+
+.logo {
+  color: var(--_logo-color);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: clamp(0.5rem, 5vw, 2rem);
+}
+
+header {
+  margin: 0;
+  font-size: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: min(65rem, 100% - 2rem);
+  margin-inline: auto;
+}
