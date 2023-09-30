@@ -75,16 +75,17 @@ const CircleImage = () => {
          expandedY = 0; // Centered along y-axis
          imageElement.style.width = "7rem";
          imageElement.style.height = "7rem";
+         imageElement.style.borderRadius = "10%"; 
         } else {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
          imageElement.style.width = "10rem";
          imageElement.style.height = "10rem";
+         imageElement.style.borderRadius = "100%"; // 100% will make it fully round
         }
         
         imageElement.style.transform = `translate(${expandedX}px, ${expandedY}px) scale(2)`; // Adjust the scale value as needed
-        imageElement.style.borderRadius = "100%"; // 100% will make it fully round
         
       } else {
         // Position the images in a circular pattern
