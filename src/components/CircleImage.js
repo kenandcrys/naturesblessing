@@ -66,28 +66,36 @@ const CircleImage = () => {
       const y = radius * Math.sin(angle);
 
       const imageElement = document.getElementById(`image-${index}`);
+      let expandedX;
+      let expandedY;
       if (expandedIndex === index) {
-        // Center and enlarge the selected image when expanded
-        const expandedX = 0; // Centered along x-axis
-        const expandedY = 0; // Centered along y-axis
+        if (window.innerWidth < 768 ){
+          // Center and enlarge the selected image when expanded
+         expandedX = -45; // Centered along x-axis
+         expandedY = 0; // Centered along y-axis
+         imageElement.style.width = "7rem";
+         imageElement.style.height = "7rem";
+        } else {
+          // Center and enlarge the selected image when expanded
+         expandedX = 0; // Centered along x-axis
+         expandedY = 0; // Centered along y-axis
+         imageElement.style.width = "10rem";
+         imageElement.style.height = "10rem";
+        }
+        
         imageElement.style.transform = `translate(${expandedX}px, ${expandedY}px) scale(2)`; // Adjust the scale value as needed
-        imageElement.style.width = "10rem";
-        imageElement.style.height = "10rem";
         imageElement.style.borderRadius = "100%"; // 100% will make it fully round
+        
       } else {
         // Position the images in a circular pattern
         imageElement.style.transform = `translate(${x}px, ${y}px)`;
         imageElement.style.width = "6rem"; // Adjust this value based on your original image size
         imageElement.style.height = "6rem"; // Adjust this value based on your original image size
-        imageElement.style.borderRadius = "50%";
+        imageElement.style.borderRadius = "50%"; // Adjust this value based on your original image size
+        
       }
     });
   }, [expandedIndex]);
- 
- 
-
-
-
 
   return (
     <div className="thumbnail-container">
@@ -107,7 +115,8 @@ const CircleImage = () => {
             height: expandedIndex === index ? "200px" : "75px",
             borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
-            display: index === expandedIndex || window.innerWidth > 768 ? "flex" : "none", // Hide images below 768px
+            display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
+            
           }}
           onClick={() => handleClick(index)}
         />
