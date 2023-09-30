@@ -49,6 +49,9 @@ const CircleImage = () => {
     return () => clearInterval(interval);
   }, [expandedIndex]);
 
+
+
+  
   useEffect(() => {
     // Calculate the angle between each image
     const angleIncrement = (2 * Math.PI) / images.length;
@@ -80,6 +83,11 @@ const CircleImage = () => {
       }
     });
   }, [expandedIndex]);
+ 
+  const screenWidth = window.innerWidth; // Get the initial screen width
+
+
+
 
   return (
     <div className="thumbnail-container">
@@ -97,8 +105,9 @@ const CircleImage = () => {
                 : "scale(1)", // Adjust the scale value as needed
             width: expandedIndex === index ? "200px" : "75px",
             height: expandedIndex === index ? "200px" : "75px",
-            borderRadius: expandedIndex === index ? "100%" : "80%",
+            borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
+            display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
           }}
           onClick={() => handleClick(index)}
         />
@@ -106,5 +115,7 @@ const CircleImage = () => {
     </div>
   );
 };
+  
+
 
 export default CircleImage;
