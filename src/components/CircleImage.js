@@ -84,7 +84,7 @@ const CircleImage = () => {
     });
   }, [expandedIndex]);
  
-  const screenWidth = window.innerWidth; // Get the initial screen width
+ 
 
 
 
@@ -107,7 +107,7 @@ const CircleImage = () => {
             height: expandedIndex === index ? "200px" : "75px",
             borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
-            display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
+            display: index === expandedIndex || window.innerWidth > 768 ? "flex" : "none", // Hide images below 768px
           }}
           onClick={() => handleClick(index)}
         />
