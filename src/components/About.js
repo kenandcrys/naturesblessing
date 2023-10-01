@@ -10,11 +10,11 @@ const About = () => {
     <div class="container text-center">
       <div class="about">
         <div class="about-img">
-          <div id="carouselExampleIndicators" class="carousel slide">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleIndicators"
+                data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -22,13 +22,13 @@ const About = () => {
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleIndicators"
+                data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleIndicators"
+                data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
@@ -59,7 +59,7 @@ const About = () => {
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#carouselExampleDark"
               data-bs-slide="prev"
             >
               <span
@@ -71,7 +71,7 @@ const About = () => {
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#carouselExampleDark"
               data-bs-slide="next"
             >
               <span
