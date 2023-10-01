@@ -1,9 +1,27 @@
 /* Apply background color to the entire viewport for .about */
 .about {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     /* Center content vertically */
     align-items: center;
     /* Center content horizontally */
+}
+.about-img {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 25px
+}
+
+.radius {
+    border-radius: 15%;
+}
+
+.about-text{
+    width: 85%;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
 }

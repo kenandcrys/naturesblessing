@@ -8,8 +8,8 @@ import DebbieLaynie2 from "../images/Debbie-Laynie2.png";
 const About = () => {
   return (
     <div class="container text-center">
-      <div class="row">
-        <div class="col">
+      <div class="about">
+        <div class="about-img">
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -37,21 +37,21 @@ const About = () => {
               <div class="carousel-item active">
                 <img
                   src={Debbie}
-                  class="d-block w-100"
+                  class="d-block w-100 radius"
                   alt={"CouplesPhoto"}
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src={DebbieLaynie}
-                  class="d-block w-100"
+                  class="d-block w-100 radius"
                   alt={"BurlesqueStylePhoto"}
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src={DebbieLaynie2}
-                  class="d-block w-100"
+                  class="d-block w-100 radius"
                   alt={"BabyOnBedWithFireplace"}
                 />
               </div>
@@ -82,7 +82,7 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div class="col">
+        <div class="about-text">
           <div>
             <h3>
               Debbie Esterlein, a mother, finds immense joy in
