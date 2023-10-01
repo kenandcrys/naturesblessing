@@ -75,7 +75,7 @@ const CircleImage = () => {
          expandedY = 0; // Centered along y-axis
          imageElement.style.width = "7rem";
          imageElement.style.height = "7rem";
-         imageElement.style.borderRadius = "10%"; 
+         imageElement.style.borderRadius = "50%"; 
         } else {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
@@ -116,7 +116,7 @@ const CircleImage = () => {
             height: expandedIndex === index ? "200px" : "75px",
             borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
-            display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
+            display: index === expandedIndex || window.innerWidth > 920 ? "block" : "none", // Hide images below 768px
             
           }}
           onClick={() => handleClick(index)}
