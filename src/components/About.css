@@ -6,6 +6,7 @@
     /* Center content vertically */
     align-items: center;
     /* Center content horizontally */
+    font-family: "Merriweather", serif;
 }
 .about-img {
     width: 450px;

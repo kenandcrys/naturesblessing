@@ -3,7 +3,7 @@
   --_logo-color: hsl(149, 66%, 44%);
   --_nav-link-color: hsl(149, 66%, 44%);
   background-color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   padding: 1rem;
 
   position: relative;
@@ -48,6 +48,8 @@
   padding: 0;
   font-size: 1.5rem;
   display: flex;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
   gap: clamp(0.5rem, 5vw, 2rem);
 }
 
