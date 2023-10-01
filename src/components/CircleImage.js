@@ -36,10 +36,6 @@ const images = [
 const CircleImage = () => {
   const [expandedIndex, setExpandedIndex] = useState(9);
 
-  const handleClick = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       const nextIndex = (expandedIndex + 1) % images.length;
@@ -119,7 +115,6 @@ const CircleImage = () => {
             display: index === expandedIndex || window.innerWidth > 920 ? "block" : "none", // Hide images below 768px
             
           }}
-          onClick={() => handleClick(index)}
         />
       ))}
     </div>
