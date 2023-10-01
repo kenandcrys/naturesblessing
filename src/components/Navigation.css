@@ -23,7 +23,7 @@
 
 .primary-header__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .primary-header .link {

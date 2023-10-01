@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="App">
       <CircleImage />
-      <p className="welcome" style={{ fontSize: "32px" }}>
+      <p className="welcome">
         Welcome to our serene world where you can experience the Soft Side of
         Nature's Blessings. Step into a realm of tranquility and immerse
         yourself in the captivating beauty that surrounds us. Our collection of

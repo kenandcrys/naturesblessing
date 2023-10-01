@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Footer from "./components/Footer";
 
@@ -39,23 +39,21 @@ export default function App(props) {
 }
 
 const Root = () => {
-  const [scrollBarColor, setScrollBarColor] = useState(false);
-  const changeNavBarColor = () => {
-    if (window.scrollY >= 99) {
-      setScrollBarColor(true);
-    } else {
-      setScrollBarColor(false);
-    }
-  };
+  // const [scrollBarColor, setScrollBarColor] = useState(false);
+  // const changeNavBarColor = () => {
+  //   if (window.scrollY >= 99) {
+  //     setScrollBarColor(true);
+  //   } else {
+  //     setScrollBarColor(false);
+  //   }
+  // };
 
-  window.addEventListener("scroll", changeNavBarColor);
+  // window.addEventListener("scroll", changeNavBarColor);
 
   return (
     <>
       <header
-        className={
-          scrollBarColor ? "primary-header primary-header-bg" : "primary-header"
-        }
+        className="primary-header"        
       >
         <div className="wrapper">
           <nav className="primary-header__inner">

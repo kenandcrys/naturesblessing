@@ -5,6 +5,7 @@
 
 body,
 html {
+  
   margin: 0;
   padding: 0;
   background-image: url("./images/nature_gradient.png");
@@ -28,8 +29,8 @@ h4 {
   justify-content: space-evenly;
 }
 
-.primary-header {
-  width: fit-content;
+header{
+  min-width: 100vw !important;
 }
 
 .primary-header__inner {
@@ -57,6 +58,8 @@ p {
   font-size: 16px;
   display: flex;
   justify-content: center;
+  text-align: center;
+  width: 95vw;
 }
 
 .container {
@@ -84,24 +87,24 @@ p {
 /* Welcome Paragraph Styles */
 .welcome {
   display: flex;
-  font-size: 32px;
+  font-size: 1.2rem;
   font-family: "Merriweather", serif;
   text-emphasis-color: aquamarine;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px; /* Adds padding to text while keeping it centered */
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(36, 36, 36); /* Assuming image5.png is a dark image */
   font-weight: bold;
-  text-align: justify; /* Justifying the text makes it more evenly spread */
+  text-align: center; /* Justifying the text makes it more evenly spread */
   line-height: 1.6;
-  max-width: 70%;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -175,7 +178,3 @@ p {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-
-@media screen and (width: 320px) and (height: 650px ) {
-
-}

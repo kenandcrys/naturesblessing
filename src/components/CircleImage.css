@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
-  padding: 0 15rem;
+  height: 300px;
   /* Adjust this value to set the size of the circular pattern */
-  margin: 1rem 0 3rem 0;
-
+  margin: 20px auto;
+  max-width: 100vw;
 }
 
 .thumbnail-image {
+  align-items: center;
   width: 1rem;
   /* Adjust this value to set the size of the individual images */
   height: 1rem;
@@ -17,7 +17,7 @@
   border-radius: 20%;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: transform 0.1s ease;
+  /* transition: transform 0.1s ease; */
 }
 
 .glass-overlay {

@@ -44,7 +44,7 @@ const CircleImage = () => {
     const interval = setInterval(() => {
       const nextIndex = (expandedIndex + 1) % images.length;
       setExpandedIndex(nextIndex);
-    }, 2000); // Change the duration of each rotation in milliseconds (e.g., 2000ms = 2 seconds)
+    }, 3000); // Change the duration of each rotation in milliseconds (e.g., 2000ms = 2 seconds)
 
     return () => clearInterval(interval);
   }, [expandedIndex]);
@@ -73,8 +73,8 @@ const CircleImage = () => {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
-         imageElement.style.width = "12rem";
-         imageElement.style.height = "12rem";
+         imageElement.style.width = "8rem";
+         imageElement.style.height = "8rem";
          imageElement.style.borderRadius = "10%"; 
         } else {
           // Center and enlarge the selected image when expanded
@@ -112,8 +112,8 @@ const CircleImage = () => {
               expandedIndex === index
                 ? "translate(-50%, -50%) scale(2)"
                 : "scale(1)", // Adjust the scale value as needed
-            width: expandedIndex === index ? "400px" : "150px",
-            height: expandedIndex === index ? "400px" : "150px",
+            width: expandedIndex === index ? "200px" : "75px",
+            height: expandedIndex === index ? "200px" : "75px",
             borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
             display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
