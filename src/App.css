@@ -1,6 +1,8 @@
 /* Reset default margins and padding for body and html */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Pacifico&display=swap");
 
+
+
 body,
 html {
   margin: 0;
@@ -17,16 +19,23 @@ h4 {
   -webkit-text-stroke: 2px rgb(84, 84, 84);
 }
 
-.nav-bar {
+.nav-list {
+  margin-top: 15px;
   display: flex;
   font-weight: 400;
-  font-size: 25px;
-  justify-content: space-around;
+  /* font-size: 25px; */
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.primary-header {
+  width: fit-content;
 }
 
 .primary-header__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center; /* to vertically center align the children */
   font-family: "Pacifico", cursive;
 }
@@ -35,6 +44,8 @@ h4 {
   color: hsl(150, 100%, 67%);
   text-shadow: 1px 1px 2px rgb(0,0, 0);
   float: left;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 p {
@@ -162,4 +173,9 @@ p {
 .package-details .Platinum {
   color: #e5e4e2; /* Platinum color */
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+
+@media screen and (width: 320px) and (height: 650px ) {
+
 }

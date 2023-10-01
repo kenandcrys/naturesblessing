@@ -71,17 +71,17 @@ const CircleImage = () => {
       if (expandedIndex === index) {
         if (window.innerWidth < 768 ){
           // Center and enlarge the selected image when expanded
-         expandedX = -45; // Centered along x-axis
+         expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
-         imageElement.style.width = "7rem";
-         imageElement.style.height = "7rem";
+         imageElement.style.width = "12rem";
+         imageElement.style.height = "12rem";
          imageElement.style.borderRadius = "10%"; 
         } else {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
-         imageElement.style.width = "10rem";
-         imageElement.style.height = "10rem";
+         imageElement.style.width = "15rem";
+         imageElement.style.height = "15rem";
          imageElement.style.borderRadius = "100%"; // 100% will make it fully round
         }
         
@@ -90,8 +90,8 @@ const CircleImage = () => {
       } else {
         // Position the images in a circular pattern
         imageElement.style.transform = `translate(${x}px, ${y}px)`;
-        imageElement.style.width = "6rem"; // Adjust this value based on your original image size
-        imageElement.style.height = "6rem"; // Adjust this value based on your original image size
+        imageElement.style.width = "8rem"; // Adjust this value based on your original image size
+        imageElement.style.height = "8rem"; // Adjust this value based on your original image size
         imageElement.style.borderRadius = "50%"; // Adjust this value based on your original image size
         
       }
@@ -112,8 +112,8 @@ const CircleImage = () => {
               expandedIndex === index
                 ? "translate(-50%, -50%) scale(2)"
                 : "scale(1)", // Adjust the scale value as needed
-            width: expandedIndex === index ? "200px" : "75px",
-            height: expandedIndex === index ? "200px" : "75px",
+            width: expandedIndex === index ? "400px" : "150px",
+            height: expandedIndex === index ? "400px" : "150px",
             borderRadius: expandedIndex === index ? "100%" : "50%",
             position: "absolute", // Add this to ensure proper positioning
             display: index === expandedIndex || window.innerWidth > 768 ? "block" : "none", // Hide images below 768px
