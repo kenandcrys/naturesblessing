@@ -8,7 +8,8 @@
     /* Center content horizontally */
 }
 .about-img {
-    width: 80%;
+    width: 450px;
+    height: fit-content;
     margin-top: 50px;
     margin-bottom: 25px
 }
@@ -23,5 +24,15 @@
 }
 
 .about-text h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+@media screen (width: 400px) and (height: 670px){
+    .about-img{
+        width: 80%;
+    }
+    
+    .about-text h3{
+        font-size: 1.2rem;
+    }
 }

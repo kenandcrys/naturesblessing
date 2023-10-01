@@ -44,7 +44,7 @@ const CircleImage = () => {
     const interval = setInterval(() => {
       const nextIndex = (expandedIndex + 1) % images.length;
       setExpandedIndex(nextIndex);
-    }, 3000); // Change the duration of each rotation in milliseconds (e.g., 2000ms = 2 seconds)
+    }, 2000); // Change the duration of each rotation in milliseconds (e.g., 2000ms = 2 seconds)
 
     return () => clearInterval(interval);
   }, [expandedIndex]);
@@ -73,15 +73,15 @@ const CircleImage = () => {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
-         imageElement.style.width = "8rem";
-         imageElement.style.height = "8rem";
+         imageElement.style.width = "7rem";
+         imageElement.style.height = "7rem";
          imageElement.style.borderRadius = "10%"; 
         } else {
           // Center and enlarge the selected image when expanded
          expandedX = 0; // Centered along x-axis
          expandedY = 0; // Centered along y-axis
-         imageElement.style.width = "15rem";
-         imageElement.style.height = "15rem";
+         imageElement.style.width = "10rem";
+         imageElement.style.height = "10rem";
          imageElement.style.borderRadius = "100%"; // 100% will make it fully round
         }
         
@@ -90,8 +90,8 @@ const CircleImage = () => {
       } else {
         // Position the images in a circular pattern
         imageElement.style.transform = `translate(${x}px, ${y}px)`;
-        imageElement.style.width = "8rem"; // Adjust this value based on your original image size
-        imageElement.style.height = "8rem"; // Adjust this value based on your original image size
+        imageElement.style.width = "6rem"; // Adjust this value based on your original image size
+        imageElement.style.height = "6rem"; // Adjust this value based on your original image size
         imageElement.style.borderRadius = "50%"; // Adjust this value based on your original image size
         
       }

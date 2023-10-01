@@ -85,7 +85,7 @@ p {
 /* Welcome Paragraph Styles */
 .welcome {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Merriweather", serif;
   text-emphasis-color: aquamarine;
   background-color: rgba(255, 255, 255, 0.8);
@@ -108,7 +108,7 @@ p {
 
 .packages-container {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Merriweather", serif;
   /* text-emphasis-color: aquamarine; */
   background-color: rgba(255, 255, 255, 0.8);
@@ -118,7 +118,7 @@ p {
   background-repeat: no-repeat;
   color: rgb(36, 36, 36);
   font-weight: bold;
-  text-align: justify; /* Justifying the text makes it more evenly spread */
+  text-align: left; /* Justifying the text makes it more evenly spread */
   line-height: 1.6;
   max-width: 80%;
   justify-content: center;
@@ -177,5 +177,26 @@ p {
 }
 
 .contact {
+  margin-top: 25px;
   background: #B1F1D8;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-img{
+  width: 350px;
+  border-radius: 15px; 
+  margin: 25px auto;
+  
+}
+
+@media screen and (width: 400px) and (height: 670px){
+  .packages-container, .welcome{
+    font-size: 1.2rem;
+  }
 }
